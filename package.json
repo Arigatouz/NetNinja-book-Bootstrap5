@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "Simple landing Page For Selling Book",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Ali Gamal",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.7.0",
+    "bootstrap-icons": "^1.7.1",
     "license": "^1.0.3"
   }
 }
