@@ -32,7 +32,7 @@
             <a href="#review" class="nav-link  me-3">Reviews</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link ">Get in Touch</a>
+            <a href="#contact" class="nav-link ">Get in Touch</a>
           </li>
           <li class="nav-item">
             <a href="#pricing" class="nav-link ">Pricing</a>
@@ -47,7 +47,7 @@
   </nav>
 
   <!-- the intro Section -->
-  <section id="inro">
+  <main id="inro">
     <div class="container-lg">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-5">
@@ -66,13 +66,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </main>
   <!-- Pricing Section -->
   <section id="pricing" class="bg-light">
     <div class="container-lg">
       <div class="text-center">
-        <h2 class="display-4  mb-3">Pricing Plans</h2>
-        <p class="lead text-primary mb-5 fw-normal">Choose your Suited Plan</p>
+        <h2 class="display-4  mb-3 text-primary">Pricing Plans</h2>
+        <p class="lead text-muted fw-normal">Choose your Suited Plan</p>
         <div class="row my-5 g-0 align-items-center justify-content-center">
           <div class="col-8 col-lg-4 col-xl-3">
             <div class="card border-0">
@@ -128,7 +128,7 @@
     <div class="container-md">
       <div class="text-center">
         <h2 class="text-primary display-4">Inside the Book...</h2>
-        <p class="lead text-muted ">A quick glance at the topics you'll learn</p>
+        <p class="lead text-muted fw-normal">A quick glance at the topics you'll learn</p>
       </div>
       <div class="row my-5 g-5 justify-content-around align-items-center">
         <div class="col-6 col-lg-4">
@@ -239,7 +239,7 @@
     </div>
   </section>
   <!-- review Section -->
-  <section id="review">
+  <section id="review" class="mb-0">
     <div class="container-md">
       <div class="text-center">
         <h3 class="display-4 text-primary">
@@ -247,7 +247,7 @@
             <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#stars" />
           </svg> Book Reviews
         </h3>
-        <p class="lead">What my students have said about the book...</p>
+        <p class="lead text-muted fw-normal">What my students have said about the book...</p>
       </div>
       <div class="row justify-content-center my-5">
         <div class="col-lg-10">
@@ -276,7 +276,8 @@
 
                 </div>
                 <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">As always great course from brad would recommend to everybody starting to get
+                <p class="lead text-muted">As always great course from Ninja would recommend to everybody starting to
+                  get
                   hands on experiance with react.js building
                   application. I am not able to make great applications as I know both frond-end and back-end and there
                   integration.
@@ -348,7 +349,8 @@
                   </svg>
                 </div>
                 <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">I have enjoyed taking this course because Brad puts focus on extensive use of
+                <p class="lead text-muted">I have enjoyed taking this course because Ninja puts focus on extensive use
+                  of
                   new CSS as well as JavaScript. I am quite
                   familiar with Bootstrap 4.0 as I have written many applications using bootstrap framework along with
                   some CSS. I
@@ -387,7 +389,7 @@
                 <h5 class="mb1">Why you Should but this Course</h5>
                 <p class="lead text-muted">This has been the best course I've taken on CSS. For some reason it's hard
                   for me to wrap my head around it, but with
-                  Brad's course I've finally gained a good grasp on it. Of course it will take a lot of practice to
+                  Ninja's course I've finally gained a good grasp on it. Of course it will take a lot of practice to
                   really get good. I
                   think this course is the best place to begin.</p>
                 <small class="text-secondary fw-bold">Reviewed by Jorge Billy Gene Ridgeway</small>
@@ -399,8 +401,119 @@
       </div>
     </div>
   </section>
+  <!-- contact Form Section -->
+  <section id="contact" class="bg-light mt-0">
+    <div class="container-md">
+      <div class="text-center text-primary text-opacity-75">
+        <h2>Get in Touch</h2>
+        <p class="lead text-muted fw-normal">Questions to ask? Fill out the form to contact me directly...</p>
+      </div>
+      <form class="mx-3 needs-validation" id="form-validation" novalidate>
+        <div class="row mb-2 justify-content-center justify-content-lg-start">
+          <!-- Email -->
+          <div class="form-floating mb-3 col-md col-lg-6 col-xl">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput" class="ps-4">Email address</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <!-- name -->
+          <div class="form-floating col-md col-lg-6 mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <label for="name" class="ps-4">Enter your name</label>
+          </div>
+          <!-- swich if book bought -->
+          <div class="form-check form-switch mb-3 ms-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Check if you already bought the book</label>
+          </div>
+          <!-- select subject -->
+          <div class="col-lg-6 ">
+            <select id="validation" class="form-select mb-3" aria-label=".form-select example">
+              <option selected>Select opt</option>
+              <option class="text-primary bg-light bg-opacity-25" value="delivery">Delivery Issue</option>
+              <option class="text-primary bg-light bg-opacity-25" value="notSatisfied">Your are not satisfied by the
+                book
+              </option>
+              <option class="text-primary bg-light bg-opacity-25" value="other">Other</option>
+            </select>
+          </div>
+          <!-- message area -->
+          <div class="form-floating col-lg-12 mb-3">
+            <textarea class="form-control vertical-height" placeholder="Leave a comment here" id="message"
+              required></textarea>
+            <label class="ps-4" for="message">Provide us with your message</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+    </div>
+
+  </section>
+  <!-- modal -->
+  <div class="modal fade" id="Subscribe-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title text-primary" id="staticBackdropLabel">Subscribe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead text-muted">I Ninja here by to send you every week my news letter about new technoloies in web
+            development and every new tips, tricks and articles to make sure you can grow your coding skills much
+            more </p>
+          <div class="container">
+            <form class="needs-validation" id="form-validation" novalidate>
+              <div class="col">
+                <label for="validationCustomEmail" class="form-label">Enter your Email Address</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text text-primary" id="inputGroupPrepend">
+                    <svg class="bi" width="25" height="25" fill="currentColor">
+                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
+                    </svg>
+                  </span>
+                  <input type="email" class="form-control" id="validationCustomEmail"
+                    aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a Email Address.
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Understood</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
 </body>
 <footer>
+  <!-- modal trigger -->
+  <div class="bg-dark">
+    <div class="text-center text-light">
+      <div class="container-lg py-5">
+        <h3>Stay in the loop</h3>
+        <p class="lead mb-0 text-capitalize">alwayse be in touch with the new technologies in web development just
+          Subscribe to my
+          news
+          letter and i will
+          send you all the new stuff</p>
+        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#Subscribe-modal">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
