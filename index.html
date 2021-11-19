@@ -17,7 +17,7 @@
 
   <nav class="navbar navbar-dark bg-dark navbar-expand-md">
     <div class="container-xxl">
-      <a href="#intro" class="navbar-brand ms-sm-5"><img class="img-fluid" src="./Assets/Images/white-logo.png"
+      <a href="#" class="navbar-brand ms-sm-5"><img class="img-fluid" src="./Assets/Images/white-logo.png"
           alt="Net Ninja Logo" width="200" height="25" /></a>
       <!-- the toggle Button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
@@ -49,7 +49,7 @@
   </nav>
 
   <!-- the intro Section -->
-  <main id="inro">
+  <main id="intro">
     <div class="container-lg">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-5">
@@ -57,7 +57,7 @@
             <h1 class="display-1">Black-Belt</h1>
             <h2 class="display-3 text-muted">Your Coding Skills</h2>
             <p class="lead text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
+              You will never need any other book , This book is the full package
             </p>
           </div>
         </div>
@@ -433,7 +433,7 @@
           <!-- select subject -->
           <div class="col-lg-6 ">
             <select id="validation" class="form-select mb-3" aria-label=".form-select example">
-              <option selected>Select opt</option>
+              <option selected>Select option</option>
               <option class="text-primary bg-light bg-opacity-25" value="delivery">Delivery Issue</option>
               <option class="text-primary bg-light bg-opacity-25" value="notSatisfied">Your are not satisfied by the
                 book
@@ -497,7 +497,33 @@
       </div>
     </div>
   </div>
-
+  </div>
+  <!-- offConvas Tab -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasOpen" aria-labelledby="offcanvasOpenLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasOpenLabel">Subscribe</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        before you Subscribe let me tell you it will be beneficial to you and you will have all the latest news to grow
+        your own
+        business and be on the right track
+      </div>
+      <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#Subscribe-modal">Subscribe
+        Now</button>
+    </div>
+  </div>
+  <!-- scroll to TOp -->
+  <div class="fixed-bottom me-3 mb-2 d-none d-md-block">
+    <div class="text-end">
+      <a href="#" class="btn btn-light  opacity-75" data-bs-toggle="tooltip" data-bs-placement="left"
+        title="Scroll Top ">
+        <svg class="bi" width="40" height="40" fill="currentColor">
+          <use xlink:href="./bootstrap-icons.svg#arrow-up-square" />
+        </svg>
+      </a>
+    </div>
   </div>
 </body>
 <footer>
@@ -511,7 +537,12 @@
           news
           letter and i will
           send you all the new stuff</p>
-        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#Subscribe-modal">Subscribe</button>
+
+        <!-- offconves opening buttom -->
+        <a class="btn btn-primary mt-3" data-bs-toggle="offcanvas" href="#offcanvasOpen" role="button"
+          aria-controls="offcanvasOpen">
+          Subscribe
+        </a>
       </div>
     </div>
   </div>
