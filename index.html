@@ -11,7 +11,7 @@
   <title>Net Ninja Book</title>
 </head>
 
-<body>
+<body class="bg-dark">
   <!-- the navbar -->
 
   <nav class="navbar navbar-dark bg-dark navbar-expand-md">
@@ -53,9 +53,9 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-md-5">
           <div class="text-center text-md-start">
-            <h1 class="display-1">Black-Belt</h1>
-            <h2 class="display-3 text-muted">Your Coding Skills</h2>
-            <p class="lead text-muted">
+            <h1 class="display-1 fw-normal">Black-Belt</h1>
+            <h2 class="display-3 text-muted lead fw-normal">Your Coding Skills</h2>
+            <p class="lead text-muted fw-normal">
               You will never need any other book , This book is the full package
             </p>
           </div>
@@ -69,21 +69,27 @@
     </div>
   </main>
   <!-- Pricing Section -->
-  <section id="pricing" class="bg-light">
+  <section id="pricing" class="bg-dark">
     <div class="container-lg">
       <div class="text-center">
-        <h2 class="display-4  mb-3 text-primary">Pricing Plans</h2>
-        <p class="lead text-muted fw-normal">Choose your Suited Plan</p>
+        <h2 class="display-4 fw-bold" style="color: hsl(41, 67%, 95%);">
+          <svg class="bi " style="width: 8%;" fill="currentColor">
+            <use xlink:href="./bootstrap-icons.svg#tag" />
+          </svg>
+          Pricing
+          Plans
+        </h2>
+        <p class="lead text-muted fw-normal" style="color: hsl(41, 67%, 95%)">Choose your Suited Plan</p>
         <div class="row my-5 g-0 align-items-center justify-content-center">
           <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
+            <div class="card border-0" style="background-color: hsl(41, 67%, 95%)">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Starter Edition</h4>
                 <p class="lead card-subtitle">eBook download only</p>
-                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="display-5 my-4 text-danger fw-bold">$12.99</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                   Buy Now
                 </a>
               </div>
@@ -91,15 +97,15 @@
           </div>
 
           <div class="col-9 col-lg-4">
-            <div class="card border-primary border-2">
-              <div class="card-header text-center text-primary">Most Popular</div>
+            <div class="card border-danger border-2" style="background-color: hsl(41, 67%, 95%)">
+              <div class="card-header text-center text-danger">Most Popular</div>
               <div class="card-body text-center py-5">
                 <h4 class="card-title">Complete Edition</h4>
                 <p class="lead card-subtitle">eBook download & all updates</p>
-                <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                <p class="display-4 my-4 text-danger fw-bold">$18.99</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                   Buy Now
                 </a>
               </div>
@@ -107,14 +113,14 @@
           </div>
 
           <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
+            <div class="card border-0" style="background-color: hsl(41, 67%, 95%)">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Ultimate Edition</h4>
                 <p class="lead card-subtitle">download, updates & extras</p>
-                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                <p class="display-5 my-4 text-danger fw-bold">$24.99</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                   Buy Now
                 </a>
               </div>
@@ -128,8 +134,14 @@
   <section id="aboutBook">
     <div class="container-md">
       <div class="text-center">
-        <h2 class="text-primary display-4">Inside the Book...</h2>
-        <p class="lead text-muted fw-normal">A quick glance at the topics you'll learn</p>
+
+        <h2 class=" display-4 fw-bold" style="color: hsl(41, 67%, 95%)"> <svg class="bi " style="width: 8%;"
+            fill="currentColor">
+            <use xlink:href="./bootstrap-icons.svg#book" />
+          </svg>
+          Inside the Book...</h2>
+        <p class="lead text-muted fw-normal" style="color: hsl(41, 67%, 95%)">A quick glance at the topics you'll learn
+        </p>
       </div>
       <div class="row my-5 g-5 justify-content-around align-items-center">
         <div class="col-6 col-lg-4">
@@ -139,10 +151,10 @@
 
           <!-- accordion -->
           <div class="accordion" id="chapters">
-            <div class="accordion-item active">
-              <h2 class="accordion-header" id="heading-1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1"
-                  aria-expanded="true" aria-controls="chapter-1">
+            <div class="accordion-item active " style="background-color: hsl(41, 67%, 95%)">
+              <h2 class="accordion-header  " id="heading-1">
+                <button class="accordion-button fs-5  text-dark lead bg-danger bg-opacity-75 fw-normal " type="button"
+                  data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
                   Chapter 1 - Your First Web Page
                 </button>
               </h2>
@@ -158,10 +170,11 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" style="background-color: hsl(41, 67%, 95%)">
               <h2 class="accordion-header" id="heading-2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                <button class="accordion-button fs-5  text-dark  bg-danger bg-opacity-75 fw-normalcollapsed"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false"
+                  aria-controls="chapter-2">
                   Chapter 2 - Mastering CSS
                 </button>
               </h2>
@@ -177,10 +190,11 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" style="background-color: hsl(41, 67%, 95%)">
               <h2 class="accordion-header" id="heading-3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1">
+                <button class="accordion-button fs-5  text-dark  bg-danger bg-opacity-75 fw-normalcollapsed"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false"
+                  aria-controls="chapter-1">
                   Chapter 3 - The Power of JavaScript
                 </button>
               </h2>
@@ -196,10 +210,11 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" style="background-color: hsl(41, 67%, 95%)">
               <h2 class="accordion-header" id="heading-4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                <button class="accordion-button fs-5  text-dark  bg-danger bg-opacity-75 fw-normalcollapsed"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false"
+                  aria-controls="chapter-4">
                   Chapter 4 - Storing Data (Firebase Databases)
                 </button>
               </h2>
@@ -215,17 +230,20 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" style="background-color: hsl(41, 67%, 95%)">
               <h2 class="accordion-header" id="heading-5">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                <button class="accordion-button fs-5  text-dark  bg-danger bg-opacity-75 fw-normalcollapsed"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false"
+                  aria-controls="chapter-5">
                   Chapter 5 - User Authentication
                 </button>
               </h2>
               <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
                 data-bs-parent="#chapters">
-                <div class="accordion-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem
+                <div class="accordion-body ">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda
+                    delectus
+                    sapiente quidem
                     consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi
                     ipsam nulla sunt alias.</p>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem
@@ -243,19 +261,21 @@
   <section id="review" class="mb-0">
     <div class="container-md">
       <div class="text-center">
-        <h3 class="display-4 text-primary">
-          <svg class="bi" width="50" height="50" fill="currentColor">
+        <h3 class="display-4 fw-bold" style="color: hsl(41, 67%, 95%)">
+          <svg class="bi" width="100" height="100" fill="currentColor">
             <use xlink:href="./bootstrap-icons.svg#stars" />
           </svg> Book Reviews
         </h3>
-        <p class="lead text-muted fw-normal">What my students have said about the book...</p>
+        <p class="lead text-muted fw-normal" style="color: hsl(41, 67%, 95%)">What my students have said about the
+          book...</p>
       </div>
       <div class="row justify-content-center my-5">
         <div class="col-lg-10">
           <div class="list-group">
-            <div class="list-group-item border-0 shadow mb-2 d-lg-flex justify-content-between ">
+            <div class="list-group-item border-0 shadow mb-2 d-lg-flex justify-content-between "
+              style="background-color: hsl(41, 67%, 95%)">
               <div class="mb-0">
-                <div class="text-primary my-2 ">
+                <div class=" my-2 text-danger">
                   <svg class=" bi" width="15" height="15" fill="currentColor"">
                     <use xlink:href=" ./bootstrap-icons.svg#star-fill" />
 
@@ -276,8 +296,8 @@
                   </svg>
 
                 </div>
-                <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">As always great course from Ninja would recommend to everybody starting to
+                <h5 class="mb1" style="background-color: hsl(41, 67%, 95%)">Why you Should but this Course</h5>
+                <p class="lead ">As always great course from Ninja would recommend to everybody starting to
                   get
                   hands on experiance with react.js building
                   application. I am not able to make great applications as I know both frond-end and back-end and there
@@ -285,13 +305,13 @@
                   Really enjoyed the course.</p>
                 <small class="text-secondary fw-bold">Reviewed by Muhammad Ali Rasheed</small>
               </div>
-              <small class="p-0 mt-lg-2 ps-lg-4 badge text-primary">3 days ago</small>
+              <small class="p-0 mt-lg-2 ps-lg-4 badge text-danger">3 days ago</small>
             </div>
           </div>
           <div class="list-group">
-            <div class="list-group-item border-0 shadow mb-2 d-lg-flex">
+            <div class="list-group-item border-0 shadow mb-2 d-lg-flex" style="background-color: hsl(41, 67%, 95%)">
               <div class="mb-0">
-                <div class="text-primary my-2">
+                <div class="text-danger my-2">
                   <svg class="bi" width="15" height="15" fill="currentColor">
                     <use xlink:href="./bootstrap-icons.svg#star-fill" />
 
@@ -314,20 +334,20 @@
                   </svg>
                 </div>
                 <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">I believe that this is one of the best courses that i've taken at udemy. Very
+                <p class="lead ">I believe that this is one of the best courses that i've taken at udemy. Very
                   good explanations, he gives you the
                   resources and the proyect is easy for understanding next and strapi. This is a superb option if you
                   want to aproach to
                   nextjs and strapi.</p>
                 <small class="text-secondary fw-bold">Reviewed by Jorge Alain Maza Rosano</small>
               </div>
-              <small class="p-0 mt-lg-2 ps-lg-4 badge text-primary">4 days ago</small>
+              <small class="p-0 mt-lg-2 ps-lg-4 badge text-danger">4 days ago</small>
             </div>
           </div>
           <div class="list-group">
-            <div class="list-group-item border-0 shadow mb-2 d-lg-flex">
+            <div class="list-group-item border-0 shadow mb-2 d-lg-flex" style="background-color: hsl(41, 67%, 95%)">
               <div class="mb-0">
-                <div class="text-primary my-2">
+                <div class="text-danger my-2">
                   <svg class="bi" width="15" height="15" fill="currentColor">
                     <use xlink:href="./bootstrap-icons.svg#star-fill" />
 
@@ -350,7 +370,7 @@
                   </svg>
                 </div>
                 <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">I have enjoyed taking this course because Ninja puts focus on extensive use
+                <p class="lead ">I have enjoyed taking this course because Ninja puts focus on extensive use
                   of
                   new CSS as well as JavaScript. I am quite
                   familiar with Bootstrap 4.0 as I have written many applications using bootstrap framework along with
@@ -359,13 +379,13 @@
                 </p>
                 <small class="text-secondary fw-bold">Reviewed by Bob Ghodsi </small>
               </div>
-              <small class="p-0 mt-lg-2 ps-lg-4 badge text-primary">5 days ago</small>
+              <small class="p-0 mt-lg-2 ps-lg-4 badge text-danger">5 days ago</small>
             </div>
           </div>
           <div class="list-group">
-            <div class="list-group-item border-0 shadow mb-2 d-lg-flex">
+            <div class="list-group-item border-0 shadow mb-2 d-lg-flex" style="background-color: hsl(41, 67%, 95%)">
               <div class="mb-0">
-                <div class="text-primary my-2">
+                <div class="text-danger my-2">
                   <svg class="bi" width="15" height="15" fill="currentColor">
                     <use xlink:href="./bootstrap-icons.svg#star-fill" />
 
@@ -388,14 +408,14 @@
                   </svg>
                 </div>
                 <h5 class="mb1">Why you Should but this Course</h5>
-                <p class="lead text-muted">This has been the best course I've taken on CSS. For some reason it's hard
+                <p class="lead">This has been the best course I've taken on CSS. For some reason it's hard
                   for me to wrap my head around it, but with
                   Ninja's course I've finally gained a good grasp on it. Of course it will take a lot of practice to
                   really get good. I
                   think this course is the best place to begin.</p>
                 <small class="text-secondary fw-bold">Reviewed by Jorge Billy Gene Ridgeway</small>
               </div>
-              <small class="p-0 mt-lg-2 ps-lg-4 badge text-primary">6 days ago</small>
+              <small class="p-0 mt-lg-2 ps-lg-4 badge text-danger">6 days ago</small>
             </div>
           </div>
         </div>
@@ -403,52 +423,69 @@
     </div>
   </section>
   <!-- contact Form Section -->
-  <section id="contact" class="bg-light mt-0">
+  <section id="contact" class="bg-dark mt-0">
     <div class="container-md">
-      <div class="text-center text-primary text-opacity-75">
-        <h2>Get in Touch</h2>
-        <p class="lead text-muted fw-normal">Questions to ask? Fill out the form to contact me directly...</p>
+      <div class="text-center  fw-bold" style="color: hsl(41, 67%, 95%)">
+        <h2 class="fw-bold display-4">
+          <svg class="bi " style="width: 8%;" fill="currentColor">
+            <use xlink:href="./bootstrap-icons.svg#person-lines-fill" />
+          </svg>
+          Get in Touch
+        </h2>
+        <p class="lead  fw-normal" style="color: hsl(41, 67%, 95%)">Questions to ask? Fill out the form to
+          contact me directly...</p>
       </div>
       <form class="mx-3 needs-validation" id="form-validation" novalidate>
         <div class="row mb-2 justify-content-center justify-content-lg-start">
           <!-- Email -->
           <div class="form-floating mb-3 col-md col-lg-6 col-xl">
-            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required
+              style="background-color: hsl(41, 67%, 95%)">
             <label for="floatingInput" class="ps-4">Email address</label>
-            <div class="valid-feedback">
+            <div class="valid-feedback text-danger">
               Looks good!
             </div>
           </div>
           <!-- name -->
           <div class="form-floating col-md col-lg-6 mb-3">
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required
+              style="background-color: hsl(41, 67%, 95%)">
             <label for="name" class="ps-4">Enter your name</label>
+            <div class="valid-feedback text-danger">
+              Looks good!
+            </div>
           </div>
           <!-- swich if book bought -->
           <div class="form-check form-switch mb-3 ms-3">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Check if you already bought the book</label>
+            <input class="form-check-input bg-danger" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+              style="background-color: hsl(41, 67%, 95%)">
+            <label class="form-check-label text-danger" for="flexSwitchCheckDefault">Check if you already bought the
+              book</label>
           </div>
           <!-- select subject -->
           <div class="col-lg-6 ">
-            <select id="validation" class="form-select mb-3" aria-label=".form-select example">
+            <select id="validation" class="form-select mb-3" aria-label=".form-select example"
+              style="background-color: hsl(41, 67%, 95%)">
               <option selected>Select option</option>
-              <option class="text-primary bg-light bg-opacity-25" value="delivery">Delivery Issue</option>
-              <option class="text-primary bg-light bg-opacity-25" value="notSatisfied">Your are not satisfied by the
+              <option class="text-danger bg-light bg-opacity-25" value="delivery">Delivery Issue</option>
+              <option class="text-danger bg-light bg-opacity-25" value="notSatisfied">Your are not satisfied by the
                 book
               </option>
-              <option class="text-primary bg-light bg-opacity-25" value="other">Other</option>
+              <option class="text-danger bg-light bg-opacity-25" value="other">Other</option>
             </select>
           </div>
           <!-- message area -->
           <div class="form-floating col-lg-12 mb-3">
-            <textarea class="form-control vertical-height" placeholder="Leave a comment here" id="message"
-              required></textarea>
+            <textarea class="form-control vertical-height" placeholder="Leave a comment here" id="message" required
+              style="background-color: hsl(41, 67%, 95%)"></textarea>
             <label class="ps-4" for="message">Provide us with your message</label>
+            <div class="valid-feedback text-danger">
+              Looks good!
+            </div>
           </div>
         </div>
         <div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-danger" style="color: hsl(41, 67%, 95%)">Submit</button>
         </div>
       </form>
 
@@ -460,20 +497,21 @@
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header ">
-          <h5 class="modal-title text-primary" id="staticBackdropLabel">Subscribe</h5>
+        <div class="modal-header bg-dark ">
+          <h5 class="modal-title text-danger" id="staticBackdropLabel">Subscribe</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <p class="lead fw-normal">I Ninja here by to send you every week my news letter about new technoloies in web
+        <div class="modal-body bg-dark">
+          <p class="lead fw-normal" style="color: hsl(41, 67%, 95%);">I Ninja here by to send you every week my news
+            letter about new technoloies in web
             development and every new tips, tricks and articles to make sure you can grow your coding skills much
             more </p>
           <div class="container">
             <form class="needs-validation" id="form-validation" novalidate>
               <div class="col">
-                <label for="validationCustomEmail" class="form-label">Enter your Email Address</label>
+                <label for="validationCustomEmail" class="form-label text-danger">Enter your Email Address</label>
                 <div class="input-group has-validation">
-                  <span class="input-group-text text-primary" id="inputGroupPrepend">
+                  <span class="input-group-text text-danger" id="inputGroupPrepend">
                     <svg class="bi" width="25" height="25" fill="currentColor">
                       <use xlink:href="./bootstrap-icons.svg#envelope-fill" />
                     </svg>
@@ -487,7 +525,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Understood</button>
+                <button type="submit" class="btn btn-success">Understood</button>
               </div>
             </form>
           </div>
@@ -498,9 +536,10 @@
   </div>
   </div>
   <!-- offCanvas Tab -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasOpen" aria-labelledby="offcanvasOpenLabel">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasOpen" aria-labelledby="offcanvasOpenLabel"
+    style="background-color: hsl(41, 67%, 95%);">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title text-primary fw-bold border-2 pb-2 border-bottom border-primary"
+      <h5 class="offcanvas-title text-danger fw-bold border-2 pb-2 border-bottom border-danger "
         id="offcanvasOpenLabel">
         Subscribe
       </h5>
@@ -508,7 +547,7 @@
     </div>
     <div class="offcanvas-body">
       <div>
-        <p class="lead text-capitalize">
+        <p class="lead text-capitalize fw-normal">
           before you Subscribe let me tell you it will be beneficial to you and you will have all the latest news to
           grow
           your own
@@ -516,14 +555,14 @@
         </p>
       </div>
       <!-- modal trigger -->
-      <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#Subscribe-modal">Subscribe
+      <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#Subscribe-modal">Subscribe
         Now</button>
     </div>
   </div>
   <!-- scroll to TOp -->
   <div class="fixed-bottom me-3 mb-2 d-none d-md-block">
     <div class="text-end">
-      <a href="#" class="btn btn-light  opacity-75" data-bs-toggle="tooltip" data-bs-placement="left"
+      <a href="#" class="btn btn-danger  opacity-75" data-bs-toggle="tooltip" data-bs-placement="left"
         title="Scroll Top ">
         <svg class="bi" width="40" height="40" fill="currentColor">
           <use xlink:href="./bootstrap-icons.svg#arrow-up-square" />
@@ -536,8 +575,8 @@
   <!-- offCanvas trigger -->
   <div class="bg-dark">
     <div class="text-center text-light">
-      <div class="container-lg py-5">
-        <h3>Stay in the loop ...</h3>
+      <div class="container-lg py-5" style="color: hsl(41, 67%, 95%);">
+        <h3 class="display-4">Stay in the loop ...</h3>
         <p class="lead mb-0 text-capitalize">alwayse be in touch with the new technologies in web development just
           Subscribe to my
           news
@@ -545,7 +584,7 @@
           send you all the new stuff</p>
 
         <!-- offconves opening buttom -->
-        <a class="btn btn-primary mt-3" data-bs-toggle="offcanvas" href="#offcanvasOpen" role="button"
+        <a class="btn btn-danger mt-3" data-bs-toggle="offcanvas" href="#offcanvasOpen" role="button"
           aria-controls="offcanvasOpen">
           Subscribe
         </a>
